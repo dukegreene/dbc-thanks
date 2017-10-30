@@ -1,24 +1,7 @@
-# README
+# DBC Thanks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Share moments, express gratitude, and get all mushy in the feels.
 
-Things you may want to cover:
+Current Build Status: ![build-status](https://circleci.com/gh/dukegreene/dbc-thanks.png?circle-token=46375044b066fe7b6ad565009a4a20495291dc8a)
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
