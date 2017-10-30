@@ -2,4 +2,6 @@
 
 require_relative 'config/environment'
 
+config.logger = Logger.new(STDOUT)
+
 run Rails.application
