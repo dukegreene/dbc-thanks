@@ -18,18 +18,18 @@ describe User do
   it "has an editable admin status" do
     expect(user.admin).to be false
     user.admin = true
-    expect(user.name).to be true
+    expect(user.admin).to be true
   end
 
   it "sets a hashed password from user input" do
-    expect(user.password.class).to eq BCrypt::Password
+    expect(user.password_digest).to match /\A\$2a\$/
   end
 
   it "can authenticate a correct password attempt" do
-    expect(user.authenticate("66spooky")).to be true
+    expect(user.authenticate("66spooky")).to be_truthy
   end
 
   it "can reject an incorrect password attempt" do
-    expect(user.authenticate("wrong_password")).to be true
+    expect(user.authenticate("wrong_password")).to be_falsey
   end
 end
